@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Map Match: Click the Country!</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="desktop-layout">
+    <nav>
+        <ul class="nav-links">
+            <li><a href="home.html">🏠 Home</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+            <li><a href="game.html">🌏 Game</a></li>
+            <li><a href="funfacts.html">💡 Fun Facts</a></li>
+            <li><a href="feedback.html">💬 Feedback</a></li>
+        </ul>
+    </nav>
+
+    <aside class="left-image">
+        <img src="images/left.jpeg" alt="Learning image left" />
+    </aside>
+
+    <header>
+        <div class="header-content">
+            <h1>🌍 Flag Match: Explore the World!</h1>
+            <p class="tagline">Find countries by their flags and Learn Countries Around the Globe!</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="game-container">
+            <aside class="score-board">
+                <article class="score-item">
+                    <h3>🏆 SCORE</h3>
+                    <div class="score-value" id="scoreDisplay">0</div>
+                </article>
+                <article class="score-item">
+                    <h3>⚡ STREAK</h3>
+                    <div class="score-value" id="streakDisplay">0</div>
+                </article>
+                <article class="score-item">
+                    <h3>📊 ACCURACY</h3>
+                    <div class="score-value" id="accuracyDisplay">0%</div>
+                </article>
+            </aside>
+
+            <section class="quiz-card" id="quizCard">
+                <div class="question-counter" id="questionCounter">Question 1 of 10</div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+
+                <div class="flag-container">
+                    <figure class="flag-display" id="flagDisplay">🏳️</figure>
+                </div>
+
+                <div class="question-text" id="questionText">
+                    Which country does this flag belong to?
+                </div>
+
+                <div class="options-grid" id="optionsGrid">
+                    <!-- Options will be generated here -->
+                </div>
+
+                <div class="game-controls">
+                    <button class="control-btn" id="nextBtn" onclick="nextQuestion()" disabled>
+                        Next Question ➡️
+                    </button>
+                    <button class="control-btn" onclick="resetGame()">🔄 New Game</button>
+                </div>
+            </section>
+
+            <section class="game-complete" id="gameComplete" style="display: none;">
+                <h2>🎉 Quiz Complete!</h2>
+                <div class="final-score" id="finalScore"></div>
+                <p id="performanceMessage"></p>
+                <button class="control-btn" onclick="resetGame()" style="margin-top: 1rem;">
+                    🔄 Play Again
+                </button>
+            </section>
+        </section>
+
+        <section class="fun-fact-popup" id="funFactPopup">
+            <h3 id="factTitle">🎉 Correct!</h3>
+            <p id="factText">Great job!</p>
+            <button class="close-popup" onclick="closeFunFact()">Continue!</button>
+        </section>
+    </main>
+
+    <aside class="right-image">
+        <img src="images/right.jpeg" alt="Learning image right" />
+    </aside>
+
+    <footer>
+        <p>© 2025 Flag Match | Learn Geography the Fun Way! 🌎 Created by Tomoki Yoza</p>
+    </footer>
+
+    <script src = "scripts/game.js"></script>
+</body>
+</html>
