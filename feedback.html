@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Map Match: Click the Country!</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="desktop-layout">
+    <nav>
+        <ul class="nav-links">
+            <li><a href="home.html">🏠 Home</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+            <li><a href="game.html">🌏 Game</a></li>
+            <li><a href="funfacts.html">💡 Fun Facts</a></li>
+            <li><a href="feedback.html">💬 Feedback</a></li>
+        </ul>
+    </nav>
+
+    <aside class="left-image">
+        <img src="images/left.jpeg" alt="Learning image left" />
+    </aside>
+
+    <header>
+        <h1>💬 Feedback</h1>
+        <p>Let us know what you think about Map Match!</p>
+    </header>
+
+    <main>
+        <form id="feedBack">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="">Choose...</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Great</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+    </main>
+
+    <aside class="right-image">
+        <img src="images/right.jpeg" alt="Learning image right" />
+    </aside>
+
+    <footer>
+        <p>© 2025 Flag Match | Learn Geography the Fun Way! 🌎 Created by Tomoki Yoza</p>
+    </footer>
+
+    <script src = "scripts/feedback.js" ></script>
+</body>
+</html>
